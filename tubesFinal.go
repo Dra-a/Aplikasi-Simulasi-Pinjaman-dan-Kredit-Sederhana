@@ -397,7 +397,7 @@ func sortDataInsert(A *dataPinjaman, n int, versi string) {
 		for pass < n {
 			temp = A[pass]
 			i = pass - 1
-			for i >= 0 && A[i].namaPeminjam < temp.namaPeminjam {
+			for i >= 0 && A[i].namaPeminjam > temp.namaPeminjam {
 				A[i+1] = A[i]
 				i--
 			}
@@ -408,7 +408,7 @@ func sortDataInsert(A *dataPinjaman, n int, versi string) {
 		for pass < n {
 			temp = A[pass]
 			i = pass - 1
-			for i >= 0 && A[i].namaPeminjam > temp.namaPeminjam {
+			for i >= 0 && A[i].namaPeminjam < temp.namaPeminjam {
 				A[i+1] = A[i]
 				i--
 			}
