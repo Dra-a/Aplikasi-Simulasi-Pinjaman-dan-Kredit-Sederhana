@@ -78,7 +78,7 @@ func main() {
 			nData++
 		case 2:
 			clearScreen()
-			cariDataSeq(data, nData, nama)
+			cariDataSeq(&data, &nData, nama)
 		case 3:
 			clearScreen()
 			if nData == 0 {
@@ -262,7 +262,7 @@ func cariDataBin(A dataPinjaman, n int, nama string) int {
 	return index
 }
 
-func cariDataSeq(A dataPinjaman, n int, nama string) {
+func cariDataSeq(A *dataPinjaman, n *int, nama string) {
 	//pencarian data metode sequential search
 	//mengeluarkan data dengan field namaPeminjam yang sama dengan isi variabel nama,
 	//indeks data tersebut disimpan pada array listIndex untuk digunakan pada fitur edit dan hapus data
@@ -271,12 +271,12 @@ func cariDataSeq(A dataPinjaman, n int, nama string) {
 	var i, j int
 	var yesno string
 	j = 1
-	for i = 0; i < n; i++ {
+	for i = 0; i < *n; i++ {
 		if A[i].namaPeminjam == nama {
 			listIndex[j-1] = i
 			fmt.Println("+------------------------------------------------------------------------------+")
 			fmt.Printf("| %s %-61d |\n", "Pinjaman nomor", j)
-			tampilkanData(A, i)
+			tampilkanData(*A, i)
 			fmt.Println("+------------------------------------------------------------------------------+")
 			j++
 		}
@@ -289,7 +289,7 @@ func cariDataSeq(A dataPinjaman, n int, nama string) {
 		inputYesNo(&yesno)
 		if yesno == "Y" {
 			j--
-			editHapusData(&A, &n, &listIndex, &j, nama)
+			editHapusData(A, n, &listIndex, &j, nama)
 		}
 	}
 }
