@@ -1,14 +1,16 @@
 # Aplikasi-Simulasi-Pinjaman-dan-Kredit-Sederhana
-Aplikasi ini mensimulasikan sistem pinjaman dan kredit sederhana dengan skema bunga tetap atau variabel. Data utama yang digunakan adalah daftar peminjam, jumlah pinjaman, tenor, dan status pembayaran. Pengguna aplikasi adalah individu yang ingin mensimulasikan sistem pinjaman secara virtual.
-
-Aplikasi ini digunakan untuk mencatat dan mengelola proyek freelance yang sedang dikerjakan oleh pengguna. Data utama yang digunakan adalah daftar proyek, klien, deadline, dan status proyek. Pengguna aplikasi adalah pekerja lepas yang ingin melacak perkembangan proyek mereka. 
+Aplikasi ini mensimulasikan sistem pinjaman dan kredit sederhana dengan skema bunga tetap atau variabel. Data utama yang digunakan adalah daftar peminjam, jumlah pinjaman, tenor, dan status pembayaran. Pengguna aplikasi adalah individu yang ingin mensimulasikan sistem pinjaman secara virtual. 
 
 # Spesifikasi
-1. Pengguna dapat menambahkan, mengubah, dan menghapus proyek freelance yang sedang atau telah dikerjakan.
-2. Pengguna dapat memperbarui status proyek (misalnya: sedang dikerjakan, selesai, pending).
-3. Pengguna dapat mencari proyek berdasarkan nama klien atau nama proyek menggunakan Sequential dan Binary Search.
-4. Pengguna dapat mengurutkan daftar proyek berdasarkan deadline atau bayaran tertinggi menggunakan Selection dan Insertion Sort.
-5. Sistem menampilkan laporan proyek yang sudah selesai dan yang masih berjalan dalam bentuk tabel atau ringkasan.
+a. Pengguna dapat menambahkan, mengubah, dan menghapus data peminjam serta jumlah pinjaman yang diajukan.
+
+b. Sistem menghitung bunga dan cicilan bulanan berdasarkan jumlah pinjaman dan tenor yang dipilih.
+
+c. Pengguna dapat mencari data peminjam berdasarkan nama menggunakan Sequential dan Binary Search.
+
+d. Pengguna dapat mengurutkan daftar peminjam berdasarkan jumlah pinjaman atau tenor menggunakan Selection dan Insertion Sort.
+
+e. Sistem menampilkan laporan jumlah pinjaman yang diberikan dan status pembayaran.
 
 # Fitur
 ## 1. Login/Logout
